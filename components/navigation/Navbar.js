@@ -10,8 +10,8 @@ export default function Navbar() {
   };
   return (
     <>
-      <div className="w-full h-20 bg-emerald-800 sticky top-0">
-        <div className="container mx-auto px-4 h-full">
+      <header className="w-full h-20 bg-emerald-800 sticky top-0">
+        <nav className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
             <Link href="/">
               <p>LOGO</p>
@@ -37,8 +37,8 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-        </div>
-      </div>
+        </nav>
+      </header>
       {isOpen && <Sidebar toggle={toggle} />}
     </>
   );
